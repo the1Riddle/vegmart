@@ -1,0 +1,31 @@
+; For Win32 only.
+; https://php.net/smtp
+SMTP=smtp.gmail.com
+; https://php.net/smtp-port
+smtp_port=587
+
+; For Win32 only.
+; https://php.net/sendmail-from
+sendmail_from = albrightwagandi@gmail.com
+
+; For Unix only.  You may supply arguments as well (default: "sendmail -t -i").
+; https://php.net/sendmail-path
+sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+
+; Force the addition of the specified parameters to be passed as extra parameters
+; to the sendmail binary. These parameters will always replace the value of
+; the 5th parameter to mail().
+;mail.force_extra_parameters =
+
+; Add X-PHP-Originating-Script: that will include uid of the script followed by the filename
+mail.add_x_header=Off
+
+; Use mixed LF and CRLF line separators to keep compatibility with some
+; RFC 2822 non conformant MTA.
+mail.mixed_lf_and_crlf=Off
+
+; The path to a log file that will log all mail() calls. Log entries include
+; the full path of the script, line number, To address and headers.
+;mail.log =
+; Log mail to syslog (Event Log on Windows).
+;mail.log = syslog
